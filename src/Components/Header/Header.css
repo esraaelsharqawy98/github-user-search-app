@@ -11,18 +11,18 @@ header button{
     display: flex;
     align-items: center;
     column-gap: 1rem;
+    transition: all .3s ease-in-out;
 }
 header button span{
     text-transform: uppercase;
     font-weight: 700;
     color: var(--txt-low-contrast);
     letter-spacing: 2px;
-    transition: all .3s ease-in-out;
 }
 header button:hover span{
     color: var(--theme-switch-btn-hover);
 }
-header button:hover svg{
+header button:hover svg path{
     fill: var(--theme-switch-btn-hover);
 }
 
