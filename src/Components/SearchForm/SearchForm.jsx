@@ -40,6 +40,12 @@ function SearchForm({handleUserName}) {
         setFormData({
           [keyName]: keyValue
         });
+        if (error[keyName]) {
+          setError({
+            ...error,
+            [keyName]: "",
+          });
+        }
       }
   return (
     <form action="" onSubmit={handleOnsubmitForm}>
