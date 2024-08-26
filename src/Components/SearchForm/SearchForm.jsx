@@ -38,6 +38,7 @@ function SearchForm({handleUserName}) {
         const keyName = event.target.name;
         let keyValue = event.target.value;
         setFormData({
+          ...formData,
           [keyName]: keyValue
         });
         if (error[keyName]) {
